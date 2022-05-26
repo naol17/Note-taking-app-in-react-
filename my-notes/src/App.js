@@ -27,6 +27,16 @@ function App() {
  
 ]);
 
+// state for the search bar   
+const [searchNote,setSearchNote] = useState('');
+const [darkMode,setDarkMode] = useState(false)
+{/*to store or save the data in local storage even after closing the tab*/}
+useEffect(()=>{
+  const savedNotes = JSON.parse(localStorage.getItem('react-notes-app-data'))
+  if(savedNotes){
+    setNotes(savedNotes)
+  }
+},[])
   return (
     <div className="App">
       the start 
