@@ -37,6 +37,33 @@ useEffect(()=>{
     setNotes(savedNotes)
   }
 },[])
+
+// saving the app data 
+
+useEffect(()=>{
+  localStorage.setItem('react-notes-app-data',JSON.stringify(notes))
+},[notes])
+{/*this function is for adding new note*/}
+const addNote = (text) =>{
+  
+  const date = new Date();
+  const newNote = {
+    id:nanoid(),
+    text : text,
+    date : date.toLocaleDateString()
+  }
+  const newNotes = [...notes,newNote]
+  setNotes(newNotes)
+}
+
+
+
+
+
+
+
+
+
   return (
     <div className="App">
       the start 
