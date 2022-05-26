@@ -39,3 +39,16 @@ code {
   flex-direction: column;
 justify-content: space-between;
 }
+.note-footer{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+}
+textarea{
+  border:none;
+  resize: none;
+  background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+}
+.note.new{
+  background-color: aquamarine;
+}
