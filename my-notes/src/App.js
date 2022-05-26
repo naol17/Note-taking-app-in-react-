@@ -56,6 +56,11 @@ const addNote = (text) =>{
   setNotes(newNotes)
 }
 
+{/*this function is for deleting notes in note app with a id*/}
+const deletingNote = (id) =>{
+  const newNotes = notes.filter((note)=> note.id!==id);
+  setNotes(newNotes)
+ }
 
 
 
