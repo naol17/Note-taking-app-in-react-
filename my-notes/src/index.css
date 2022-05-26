@@ -86,3 +86,10 @@ textarea:focus{
 .search input:focus{
   outline: none;
 }
+.dark-mode{
+  background-color: black;
+  min-height: 100vh;
+}
+.dark-mode h1{
+  color: white;
+}
