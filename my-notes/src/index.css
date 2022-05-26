@@ -52,3 +52,20 @@ textarea{
 .note.new{
   background-color: aquamarine;
 }
+textarea:focus{
+  outline: none;
+}
+.save{
+  background-color: rgb(233, 233, 233);
+  border:none;
+  border-radius: 15px;
+  padding: 5px 10px 5px 10px;
+  border:solid 4px #308d46;
+}
+.save:hover{
+  background-color: #308d46;
+  cursor: pointer;
+}
+.delete-icon{
+  cursor: pointer;
+}
