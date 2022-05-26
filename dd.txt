@@ -1,7 +1,7 @@
 import React, { useState,useEffect } from 'react'
 import Search from './components/search';
 import Header from './components/header';
-import NotesList from './components/notesList'
+import Notelist from './components/notesList'
 import Note from './components/note'
 import {nanoid} from 'nanoid'
 
